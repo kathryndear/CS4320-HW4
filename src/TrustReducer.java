@@ -13,7 +13,7 @@ public class TrustReducer extends Reducer<IntWritable, NodeOrDouble, IntWritable
         //Implement
 	
 	Node m = null;
-	Iterator it = values.iterator();
+	Iterator<NodeOrDouble> it = values.iterator();
 
 	double sum = 0;
 	while (it.hasNext()) {
