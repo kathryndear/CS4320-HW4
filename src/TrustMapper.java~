@@ -13,11 +13,11 @@ public class TrustMapper extends Mapper<IntWritable, Node, IntWritable, NodeOrDo
 
         //Implement
 	double p = value.getPageRank()/value.outgoingSize();
-	context.write(key, value);
+	emit(key, value);
 	Iterator outgoing = value.iterator();
 
 	while (outgoing.hasNext()) {
-		context.write(outgoing.next(),p);
+		emit(outgoing.next(),p);
 	} 
         
     }

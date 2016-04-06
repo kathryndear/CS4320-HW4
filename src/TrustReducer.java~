@@ -27,7 +27,7 @@ public class TrustReducer extends Reducer<IntWritable, NodeOrDouble, IntWritable
 	}
 
 	m.setPageRank(sum);
-	context.write(key,m);
+	emit(key,m);
 
     }
 }
