@@ -25,7 +25,7 @@ public class TrustReducer extends Reducer<IntWritable, NodeOrDouble, IntWritable
 			sum = sum + nod.getDouble();
 		}
 	}
-
+	//set dangling node page rank to zero
 	m.setPageRank(sum);
 	context.write(key,m);
 

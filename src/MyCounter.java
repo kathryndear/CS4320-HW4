@@ -7,7 +7,7 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.*;
 import org.apache.hadoop.util.*;
 
-public enum MyCounters {
+public enum MyCounter {
 Leftover,
 Counter
-}
+};

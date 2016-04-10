@@ -12,8 +12,8 @@ public class LeftoverReducer extends Reducer<IntWritable, Node, IntWritable, Nod
     public static double alpha = 0.85;
     public void reduce(IntWritable nid, Iterable<Node> Ns, Context context) throws IOException, InterruptedException {
         //Implement
-	//
-        
+	
+       
 
     }
 }
