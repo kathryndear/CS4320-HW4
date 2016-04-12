@@ -11,7 +11,7 @@ public class TrustReducer extends Reducer<IntWritable, NodeOrDouble, IntWritable
     public void reduce(IntWritable key, Iterable<NodeOrDouble> values, Context context)
         throws IOException, InterruptedException {
         //Implement
-	
+	System.out.println("HelloTR");
 	Node m = null;
 	Iterator<NodeOrDouble> it = values.iterator();
 

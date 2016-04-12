@@ -27,7 +27,7 @@ public class TrustMapper extends Mapper<IntWritable, Node, IntWritable, NodeOrDo
 	else {
 		NodeOrDouble val = new NodeOrDouble(value);		
 		context.write(key, val);
-		long inc = (long)(value.getPageRank()*10^6);		
+		long inc = (long)(value.getPageRank()*100000);		
 		context.getCounter(MyCounter.Leftover).increment(inc);
 	}
 	

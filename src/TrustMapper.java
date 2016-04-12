@@ -10,7 +10,7 @@ import org.apache.hadoop.util.*;
 
 public class TrustMapper extends Mapper<IntWritable, Node, IntWritable, NodeOrDouble> {
     public void map(IntWritable key, Node value, Context context) throws IOException, InterruptedException {
-
+	System.out.println("HelloTM");
 	if (!(value.outgoingSize()==0)) {
 		double p = value.getPageRank()/value.outgoingSize();
 		NodeOrDouble val = new NodeOrDouble(value);

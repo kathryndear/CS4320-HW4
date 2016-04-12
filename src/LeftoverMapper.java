@@ -13,14 +13,11 @@ public class LeftoverMapper extends Mapper<IntWritable, Node, IntWritable, Node>
         
         //Implement
 
-	long missing = Long.parseLong(context.getConfiguration().get(MyCounter.Leftover.toString()))/100000;
-	long size = Long.parseLong(context.getConfiguration().get(MyCounter.Counter.toString()));
-
-	double prs = (double)(missing/size);
-	NodeOrDouble prs2 = new NodeOrDouble(prs);
 	context.write(nid,N);
-	
-	//context.write(nod,prs2);
+
+
+
+
 	//take total dangling pagerank/size of graph
 	//emit node, node id
 	//emit node, pagerank/size
