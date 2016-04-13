@@ -61,6 +61,8 @@ public class PageRank {
 		leftover = c.getValue();
 		Counter c2 = job.getCounters().findCounter(MyCounter.Counter);
 		size = c2.getValue();
+		System.out.println(i-1);
+		System.out.println("leftoverPR: " + leftover);
             } else {
                 // Set up leftover and size
 		

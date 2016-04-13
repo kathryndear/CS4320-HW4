@@ -11,17 +11,10 @@ public class LeftoverMapper extends Mapper<IntWritable, Node, IntWritable, Node>
 
     public void map(IntWritable nid, Node N, Context context) throws IOException, InterruptedException {
         
-        //Implement
+        //Identity -- process done in LeftoverReducer
 
 	context.write(nid,N);
 
-
-
-
-	//take total dangling pagerank/size of graph
-	//emit node, node id
-	//emit node, pagerank/size
-	//Long.parseLong(str);
 
     }
 }
